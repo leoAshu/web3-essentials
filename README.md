@@ -41,4 +41,4 @@
 > Important Keywords
 >
 > - Dapp - Decentralized Application = Decentralized Protocol = Smart Contract
->   - A decentralized application is usually a combination of many smart contracts.
+>   - A decentralized application is usually a combination of many smart contracts

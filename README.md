@@ -34,6 +34,11 @@
 
 > A single `Blockchain Oracle` or data source cannot be used as it defeats the purpose of blockchain. Inorder to keep the system fully decentralized, a decentralized `Blockchain Oracle` network is needed.
 
-> `Chainlink` is a modular, decentralized oracle network that can both bring external data and external computation into the smart contracts to make the system decentralized end-to-end.
+> `Chainlink` is a modular, decentralized oracle network that can both bring external data and external computation into the smart contracts to make the system decentralized end-to-end. It is also blockchain agnostic.
 
 > This `on-chain` decentralized logic along with the `off-chain` decentralized data/computation gives rise to `Hybrid Smart Contracts`.
+
+> Important Keywords
+>
+> - Dapp - Decentralized Application = Decentralized Protocol = Smart Contract
+>   - A decentralized application is usually a combination of many smart contracts.

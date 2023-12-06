@@ -78,3 +78,20 @@
 - Security & Immutability
 - Counterparty Risk Removal
 - Trust Minimized Agreements
+
+## Smart Contract based Industries
+
+- **DeFi**
+
+  - Decentralized Finance
+  - gives users the ability to engage with finance and markets in a decentralized way
+
+- **DAOs**
+
+  - Decentralized Autonomous Organizations
+  - are groups that are governed completely decentralized by a set of Smart Contracts on-chain
+    - fair and transparent governance & voting
+
+- **NFT**
+  - Non-Fungible Tokens
+  - digital arts or unique assets

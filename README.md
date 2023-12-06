@@ -100,3 +100,46 @@
 >
 > - Access to `secret phrase` gives access to all accounts on a wallet
 > - Access to a `private key` gives access to a single account
+
+## Transactions
+
+<br />
+<p align='center'>
+    <img src='./images/my-first-transaction.png' />
+    <strong>
+        My First SepoliaETH (Testnet) Transaction
+    </strong>
+</p>
+<br />
+
+- **Transaction Hash**
+  - a TxHash or transaction hash is a unique 66-character identifier that is generated whenever a transaction is executed
+- **Block**
+  - number of the block in which the transaction is recorded
+  - block confirmations indicate how many blocks have been added since the transaction was produced
+- **From**
+  - the sending part of the transaction
+- **To**
+  - the receiving part of the transaction
+  - could be a contract address
+- **Value**
+  - the value being transacted in Ether and fiat value
+- **Transaction Fee**
+  - amount paid to process the transaction in Ether and fiat value
+- **Gas Price**
+  - cost per unit of gas spent for the transaction, in Ether and Gwei
+- **Gas Limit & Usage by Txn**
+  - maximum amount of gas allocated for the transaction and the amount eventually used
+  - normal ETH transfers involve 21,000 gas units while contracts involve higher values
+- **Gas Fees**
+  - base fee refers to the network base fee at the time of the block
+  - max fee and max priority fee refer to the max amount a user is willing to pay for their tx and,
+  - to give to the block producer respectively
+- **Burnt Fees**
+  - total amount of ETH burnt from this tx
+- **Input Data**
+  - additional data included for this transaction
+  - commonly used as part of contract interaction or
+  - as a message sent to the recipient
+
+> **Testnet Faucet** - A place to get free testnet ETH

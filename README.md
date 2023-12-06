@@ -125,7 +125,9 @@
 - **Value**
   - the value being transacted in Ether and fiat value
 - **Transaction Fee**
-  - amount paid to process the transaction in Ether and fiat value
+  - amount paid to process the transaction in native currency, ETH in this case
+  - paid by the sender
+  - paid to the validators ot blockchain nodes to process the transaction
 - **Gas Price**
   - cost per unit of gas spent for the transaction, in Ether and Gwei
 - **Gas Limit & Usage by Txn**
@@ -143,3 +145,9 @@
   - as a message sent to the recipient
 
 > **Testnet Faucet** - A place to get free testnet ETH
+
+> **Gas**
+>
+> - is a unit of computational measurement
+> - the more complex a transaction, the more gas to be paid
+> - `Gas Usage by Transaction * Gas Price = Transaction Fee`

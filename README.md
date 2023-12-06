@@ -21,12 +21,12 @@
 
 - are a set of instructions executed in a decentralized way without the need for a centralized or third party intermediary
 - first proposed in early 1990s by Nick Szabo
-- exist and exxecuted on the decentralized platforms like Ethereum
+- exist and executed on the decentralized platforms like Ethereum
 - is the factor that differentiates Bitcoin from Ethereum
   - Bitcoin does not have Smart Contracts unlike Ethereum
   - Bitcoin is intentionally "turning incomplete"
 
-## Oracle Problem
+### Oracle Problem
 
 - to convert everyday agreements to digital agreements on blockchains, they need to access the data
 - these Blockchains are intentionally walled off and hence cannot read or listen to data from the real world
@@ -42,3 +42,22 @@
 >
 > - Dapp - Decentralized Application = Decentralized Protocol = Smart Contract
 >   - A decentralized application is usually a combination of many smart contracts
+
+### Purpose of Blockchain or Smart Contracts
+
+- [McDonald's scandal](https://www.chicagotribune.com/sns-mcdonalds-story.html)
+- relandscape markets and agreements
+- makes the agreements unbreakable promises as smart contracts are
+  - immutable and cannot be altered once deployed
+  - decentralized and not limited to a single authority
+  - transparent and everyone sees the terms of the agreement
+  - impossible to hack, defraud or manipulate
+  - executed automatically
+
+> **Note:**
+>
+> Any agreement in the history of mankind where there was a trust assumption that was broken, smart contracts can and should be applied to.
+
+<p align='center'>
+<img src='./images/trust-issues.png' />
+</p>

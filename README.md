@@ -95,3 +95,8 @@
 - **NFT**
   - Non-Fungible Tokens
   - digital arts or unique assets
+
+> Note:
+>
+> - Access to `secret phrase` gives access to all accounts on a wallet
+> - Access to a `private key` gives access to a single account

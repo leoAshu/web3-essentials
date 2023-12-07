@@ -112,6 +112,8 @@
 </p>
 <br />
 
+### Key Terminologies in Transaction Details
+
 - **Transaction Hash**
   - a TxHash or transaction hash is a unique 66-character identifier that is generated whenever a transaction is executed
 - **Block**
@@ -144,10 +146,31 @@
   - commonly used as part of contract interaction or
   - as a message sent to the recipient
 
-> **Testnet Faucet** - A place to get free testnet ETH
-
 > **Gas**
 >
 > - is a unit of computational measurement
 > - the more complex a transaction, the more gas to be paid
 > - `Gas Usage by Transaction * Gas Price = Transaction Fee`
+
+> **Nonce**
+>
+> - a **number used once** to find the solution to the blockchain problem
+> - also used to define the transaction number for an account/address
+
+> **Public Key**
+>
+> - is derived from the private key for a user
+> - is visible publicly and is used to verify that a transaction came from the user
+> - `Secret/Seed Phrase => Private Key => Public Key => Address`
+
+> **Signing transaction**
+>
+> - a **one way** process
+> - someone with a private key signs a transaction by their private key being hashed with their transaction data
+> - anyone can then verify this new transaction hash with signer's public key
+
+> Notes:
+>
+> - Mining a cyrptocurrency is referred to the process of solving a problem which is specific to the cryptocurrency.
+> - The transactions are **digitally signed** using a private key and can be verified later on using the corresponding public key.
+> - The account addresses are in some form derived from their respective public keys.

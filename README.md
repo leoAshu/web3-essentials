@@ -295,3 +295,18 @@
 ### Activation:
 
 - EIP 1559 was included in the London Hard Fork, which went live on August 5, 2021.
+
+## Additonal Blockchain Fundamentals
+
+- Consensus
+- Chain Selection
+- Sybil Resistance
+- PoW and PoS
+- Nakamoto Consensus
+- Block Confirmations
+- Sybil Attack
+- 51% Attack
+- Longest Chain Rule
+- Validators
+- Layer 2
+- Sharding and Rollups

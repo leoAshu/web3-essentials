@@ -169,6 +169,42 @@
 > - someone with a private key signs a transaction by their private key being hashed with their transaction data
 > - anyone can then verify this new transaction hash with signer's public key
 
+<br />
+<p align='center'>
+    <img src='./images/demo-hash.png' />
+    <strong>
+      Demo Hash
+    </strong>
+</p>
+<br />
+
+<br />
+<p align='center'>
+    <img src='./images/demo-block.png' />
+    <strong>
+      Demo Block
+    </strong>
+</p>
+<br />
+
+<br />
+<p align='center'>
+    <img src='./images/demo-blockchain.png' />
+    <strong>
+      Demo Blockchain
+    </strong>
+</p>
+<br />
+
+<br />
+<p align='center'>
+    <img src='./images/demo-transaction.png' />
+    <strong>
+      Demo Transaction Blockchain
+    </strong>
+</p>
+<br />
+
 > Notes:
 >
 > - Mining a cyrptocurrency is referred to the process of solving a problem which is specific to the cryptocurrency.

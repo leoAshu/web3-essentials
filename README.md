@@ -129,7 +129,7 @@
 - **Transaction Fee**
   - amount paid to process the transaction in native currency, ETH in this case
   - paid by the sender
-  - paid to the validators ot blockchain nodes to process the transaction
+  - paid to the validators or miner nodes to process the transaction
 - **Gas Price**
   - cost per unit of gas spent for the transaction, in Ether and Gwei
 - **Gas Limit & Usage by Txn**

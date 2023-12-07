@@ -1,5 +1,51 @@
 # Web3 Essentials
 
+## Blockchain
+
+- is a public database that is updated and shared across many computers in a network
+- consists of consecutive groups of data known as **blocks** that are cryptographically linked together forming a chain
+- data in a block is immutable
+  - as it cannot be changed without changing all subsequent blocks
+  - this requires a consensus from the entire network
+- Ethereum uses **proof-of-stake** consensus mechanism where
+  - validators stake ETH as collateral to propose and validate blocks
+
+<br />
+<p align='center'>
+    <img src='./images/demo-hash.png' />
+    <strong>
+      Demo Hash
+    </strong>
+</p>
+<br />
+
+<br />
+<p align='center'>
+    <img src='./images/demo-block.png' />
+    <strong>
+      Demo Block
+    </strong>
+</p>
+<br />
+
+<br />
+<p align='center'>
+    <img src='./images/demo-blockchain.png' />
+    <strong>
+      Demo Blockchain
+    </strong>
+</p>
+<br />
+
+<br />
+<p align='center'>
+    <img src='./images/demo-transaction.png' />
+    <strong>
+      Demo Transaction Blockchain
+    </strong>
+</p>
+<br />
+
 ## Bitcoin
 
 - one of the first `protocols` to use the `Blockchain` technology
@@ -18,33 +64,37 @@
   - decentralized organizations
 - unlike Bitcoin which was viewed only as a store of value, Ethereum was viewed as both store of value and a utility to facilitate these decentralized agreements
 
+### Ethereum Virtual Machine (EVM)
+
+- is the single canonical computer that exists in the ethereum universe
+- it's state is agreed upon by all participants in the network
+- users can request the execution of arbitrary computation on the EVM
+- such requests are called **transaction requests**
+- the requests are stored on the blockchain and cannot be tampered with
+- the native cryptocurrency of Ethereum, is used as bounty to incentivize participants to validate and process the requests
+
 ## Smart Contracts
 
-- are a set of instructions executed in a decentralized way without the need for a centralized or third party intermediary
+- are a set of instructions or reusable snippets of code executed in a decentralized way without the need for a centralized or third party intermediary
 - first proposed in early 1990s by Nick Szabo
 - exist and executed on the decentralized platforms like Ethereum
 - is the factor that differentiates Bitcoin from Ethereum
   - Bitcoin does not have Smart Contracts unlike Ethereum
   - Bitcoin is intentionally "turning incomplete"
+- allows the users to build user-facing applications and services on the network
 
-### Oracle Problem
+## Oracle Problem
 
 - to convert everyday agreements to digital agreements on blockchains, they need to access the data
 - these Blockchains are intentionally walled off and hence cannot read or listen to data from the real world
-- `Blockchain Oracles` solve this problem by interacting with the `off-chain` world to provide external data or computation to Smart Contracts
-
-> A single `Blockchain Oracle` or data source cannot be used as it defeats the purpose of blockchain. Inorder to keep the system fully decentralized, a decentralized `Blockchain Oracle` network is needed.
-
-> `Chainlink` is a modular, decentralized oracle network that can both bring external data and external computation into the Smart ontracts to make the system decentralized end-to-end. It is also blockchain agnostic.
+- `Oracles` solve this problem by interacting with the `off-chain` world to provide external data or computation to Smart Contracts
+- a single centralized blockchain oracle or data source cannot be used as it defeats the purpose of blockchain
+- to keep the system fully decentralized, a **decentralized** oracle network is needed
+- `Chainlink` is a modular, decentralized oracle network that solves the **Oracle Problem**
 
 > This `on-chain` decentralized logic along with the `off-chain` decentralized data/computation gives rise to `Hybrid Smart Contracts`.
 
-> Important Keywords
->
-> - Dapp - Decentralized Application = Decentralized Protocol = Smart Contract
->   - A decentralized application is usually a combination of many Smart Contracts
-
-### Purpose of Blockchain or Smart Contracts
+## Purpose of Blockchain or Smart Contracts
 
 - [McDonald's scandal](https://www.chicagotribune.com/sns-mcdonalds-story.html)
 - relandscape markets and agreements
@@ -103,6 +153,16 @@
 
 ## Transactions
 
+- a **transaction request** is the formal term for a request for code execution on the EVM
+- is a fulfilled transaction request and the associated change in the EVM state
+- any user can broadcast a transaction request to affect the agreed-upon EVM state
+- the transaction request must be validated, executed, and committed to the network by another node for it to affect the agreed-upon state of EVM
+- upon committment, the state change is broadcasted to all nodes in the networks
+- examples of transactions:
+  - Send X ETH from my account to Alice's account.
+  - Publish some smart contract code into EVM state.
+  - Execute the code of the smart contract at address X in the EVM, with arguments Y.
+
 <br />
 <p align='center'>
     <img src='./images/my-first-transaction.png' />
@@ -148,42 +208,6 @@
 
 > Note: For each transaction, some amount of ether is burnt/lost forever, while some is paid to the miners or validators.
 
-<br />
-<p align='center'>
-    <img src='./images/demo-hash.png' />
-    <strong>
-      Demo Hash
-    </strong>
-</p>
-<br />
-
-<br />
-<p align='center'>
-    <img src='./images/demo-block.png' />
-    <strong>
-      Demo Block
-    </strong>
-</p>
-<br />
-
-<br />
-<p align='center'>
-    <img src='./images/demo-blockchain.png' />
-    <strong>
-      Demo Blockchain
-    </strong>
-</p>
-<br />
-
-<br />
-<p align='center'>
-    <img src='./images/demo-transaction.png' />
-    <strong>
-      Demo Transaction Blockchain
-    </strong>
-</p>
-<br />
-
 ## Gas
 
 - crucial component of the Ethereum network
@@ -218,25 +242,56 @@
 > - Gas fees can get high when there is a high demand for transactions on the Ethereum network.
 > - Users may need to offer higher tip amounts to outbid other users' transactions to increase the likelihood of their transaction to be processed.
 > - Initiatives such as scalability upgrades and layer 2 scaling are being implemented to address gas fee issues.
->   **Nonce**
->
-> - a **number used once** to find the solution to the blockchain problem
-> - also used to define the transaction number for an account/address
 
-> **Public Key**
->
-> - is derived from the private key for a user
-> - is visible publicly and is used to verify that a transaction came from the user
-> - `Secret/Seed Phrase => Private Key => Public Key => Address`
+## Block Reward
 
-### Signing transactions
+- refers to the new digital tokens or cryptocurrencies given to miners who solve a complex math problem and create a new block of verified transactions
+- miners use networks of computers to compete with each other in verifying blocks
+- in Bitcoin
+  - the reward is new BTC (bitcoin) tokens
+  - there is a limit on the number of Bitcoins that can be created
+  - designed to ultimately have only 21 million bitcoins
+    - this is why the reward amount halves approximately every four years after the creation of every 210,000 blocks
+  - the reward is expected to reach zero around the year 2140
+  - along the way, transaction fees are expected to become the primary incentive for bitcoin miners
+- in Ethereum
+  - the reward is new ETH (ether) tokens
+  - no limit on the number of ether tokens and are created at a faster pace unlike Bitcoin
+  - the total number of blocks on the Ethereum chain is larger than in the Bitcoin chain
 
-- a **one way** process
-- someone with a private key signs a transaction by their private key being hashed with their transaction data
-- anyone can then verify this new transaction hash with signer's public key
+## Ethereum Improvement Proposal (EIP) 1559
 
-> Notes:
->
-> - Mining a cyrptocurrency is referred to the process of solving a problem which is specific to the cryptocurrency.
-> - The transactions are **digitally signed** using a private key and can be verified later on using the corresponding public key.
-> - The account addresses are in some form derived from their respective public keys.
+- is a proposed upgrade for the Ethereum blockchain.
+
+### Gas Fee Improvement
+
+- aims to address the issue of unpredictable and high transaction fees on the Ethereum network.
+- introduces a new transaction pricing mechanism to make gas fees more predictable and improve the overall user experience.
+
+### Base Fee and Priority Fee
+
+- introduces the concept of a "base fee" that is burned during transactions.
+- users can include a "priority fee" to incentivize miners for quicker inclusion in blocks.
+
+### Fee Burn Mechanism
+
+- the base fee is dynamically adjusted based on network demand.
+- excess fees (above the base fee) are burned, reducing the overall supply of Ether.
+
+### Predictable Fee Model
+
+- aims to create a more stable and predictable fee model for users and decentralized applications (DApps).
+
+### Implementation Impact
+
+- significant change in Ethereum's economic model.
+- expected to mitigate scalability issues and improve the overall efficiency of the network.
+
+### Community Feedback
+
+- EIP 1559 has garnered both support and concerns within the Ethereum community.
+- the upgrade represents a fundamental shift in Ethereum's fee structure.
+
+### Activation:
+
+- EIP 1559 was included in the London Hard Fork, which went live on August 5, 2021.

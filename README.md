@@ -146,28 +146,7 @@
   - commonly used as part of contract interaction or
   - as a message sent to the recipient
 
-> **Gas**
->
-> - is a unit of computational measurement
-> - the more complex a transaction, the more gas to be paid
-> - `Gas Usage by Transaction * Gas Price = Transaction Fee`
-
-> **Nonce**
->
-> - a **number used once** to find the solution to the blockchain problem
-> - also used to define the transaction number for an account/address
-
-> **Public Key**
->
-> - is derived from the private key for a user
-> - is visible publicly and is used to verify that a transaction came from the user
-> - `Secret/Seed Phrase => Private Key => Public Key => Address`
-
-> **Signing transaction**
->
-> - a **one way** process
-> - someone with a private key signs a transaction by their private key being hashed with their transaction data
-> - anyone can then verify this new transaction hash with signer's public key
+> Note: For each transaction, some amount of ether is burnt/lost forever, while some is paid to the miners or validators.
 
 <br />
 <p align='center'>
@@ -204,6 +183,57 @@
     </strong>
 </p>
 <br />
+
+## Gas
+
+- crucial component of the Ethereum network
+- serves as the fuel that powers its operations, a computation unit of measurement
+
+### Gas Fees
+
+- is paid for each transaction
+- ensures that the network is not vulnerable to spam and infinite computational loops
+- must be paid in Etherium's native currency, ether (ETH)
+- consists of two components
+  - base fee
+    - set by the protocol
+    - minimum amount that must be paid for a transaction to be considered valid
+  - priority fee
+    - is a tip that users can add to the base fee
+    - incentivizes validators to include theit transaction in the next block
+    - offering too little may result in delayed transaction
+    - offering too much may waste ETH
+- `Gas Fees = Gas Used * Cost per unit Gas`
+  - `Gas Fees = Gas Used * (Base Fee + Priority Fee)`
+
+### Gas Limit
+
+- is the maximum amount of gas that a user is willing to consume in a transaction
+- higher the complexity of a transaction, like those involving Smart Contracts, higher the required gas limit
+- if gas limit too low, the transaction may fail to complete
+  - the gas units already consumed will be lost
+
+> Note:
+>
+> - Gas fees can get high when there is a high demand for transactions on the Ethereum network.
+> - Users may need to offer higher tip amounts to outbid other users' transactions to increase the likelihood of their transaction to be processed.
+> - Initiatives such as scalability upgrades and layer 2 scaling are being implemented to address gas fee issues.
+>   **Nonce**
+>
+> - a **number used once** to find the solution to the blockchain problem
+> - also used to define the transaction number for an account/address
+
+> **Public Key**
+>
+> - is derived from the private key for a user
+> - is visible publicly and is used to verify that a transaction came from the user
+> - `Secret/Seed Phrase => Private Key => Public Key => Address`
+
+### Signing transactions
+
+- a **one way** process
+- someone with a private key signs a transaction by their private key being hashed with their transaction data
+- anyone can then verify this new transaction hash with signer's public key
 
 > Notes:
 >

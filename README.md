@@ -298,15 +298,54 @@
 
 ## Additonal Blockchain Fundamentals
 
-- Consensus
-- Chain Selection
-- Sybil Resistance
-- PoW and PoS
-- Nakamoto Consensus
-- Block Confirmations
-- Sybil Attack
-- 51% Attack
-- Longest Chain Rule
-- Validators
-- Layer 2
-- Sharding and Rollups
+### Consensus
+
+- refers to the majority of a group agreeing on a decision
+- in blockchain, it involves 51% of traders and miners agreeing on the global status of a coin
+- consensus mechanisms validate transactions and ensure their authenticity, listing them in the blockchain to establish trust
+- different types of consensus mechanisms exist such as
+
+  - Proof of Work (PoW)
+  - Proof of Stake (PoS)
+  - Proof of Capacity (PoC)
+  - Proof of Activity (PoA)
+  - Proof of Authority (PoA)
+  - Proof of Burn (PoB)
+  - Proof of Elapsed Time (PoET)
+
+### Chain Selection
+
+- is the process by which nodes in a decentralized network agree on the valid chain of transactions
+- nodes follow specific consensus rules to determine the correct chain
+- consensus mechanisms like Proof of Work (PoW) and Proof of Stake (PoS) influence chain selection
+
+### Sybil Resistance
+
+- is a system's ability to resist attacks from malicious actors creating multiple fake identities (Sybil nodes) to gain control or disrupt the network
+- ensures that nodes in a network represent unique entities, preventing concentration of power
+
+### Proof of Work (PoW)
+
+- requires participants (miners) to solve complex mathematical problems to validate transactions
+- resource-intensive, providing security through computational work
+
+### Proof of Stake (PoS)
+
+- validators are chosen to create new blocks based on the amount of cryptocurrency they hold and are willing to "stake"
+- is a more energy-efficient alternative to PoW
+
+### Nakamoto Consensus
+
+- the consensus algorithm used in Bitcoin, named after its pseudonymous creator, Satoshi Nakamoto
+- nodes compete to solve a cryptographic puzzle to add new blocks to the blockchain
+- the longest chain is considered the valid one
+
+### Block Confirmations
+
+- the number of blocks added to the blockchain after a particular block
+- more confirmations reduce the risk of a transaction being reversed
+
+### Sybil Attack
+
+- an attack where a single adversary controls multiple nodes on a network, undermining the network's integrity
+- various mechanisms are used by **Sybil-resistant** systems to prevent or mitigate such attacks

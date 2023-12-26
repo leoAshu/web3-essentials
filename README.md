@@ -197,8 +197,8 @@
   - normal ETH transfers involve 21,000 gas units while contracts involve higher values
 - **Gas Fees**
   - base fee refers to the network base fee at the time of the block
-  - max fee and max priority fee refer to the max amount a user is willing to pay for their tx and,
-  - to give to the block producer respectively
+  - max fee fee refer to the max amount a user is willing to pay for their tx
+  - max priority refers to give to the block producer respectively
 - **Burnt Fees**
   - total amount of ETH burnt from this tx
 - **Input Data**
@@ -224,7 +224,7 @@
     - minimum amount that must be paid for a transaction to be considered valid
   - priority fee
     - is a tip that users can add to the base fee
-    - incentivizes validators to include theit transaction in the next block
+    - incentivizes validators to include their transaction in the next block
     - offering too little may result in delayed transaction
     - offering too much may waste ETH
 - `Gas Fees = Gas Used * Cost per unit Gas`

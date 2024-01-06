@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . *.sol"
+  },
   "dependencies": {
     "solc": "^0.8.23-fixed"
   }
